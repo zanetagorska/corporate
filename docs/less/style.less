@@ -1,0 +1,270 @@
+@import (inline) "../css/font-awesome.min.css";
+@import (inline) "../css/bootstrap.min.css";
+@import "_general.less";
+
+// header
+
+header {
+    background-image: url("../img/bg-hero.jpg");
+    background-position: top center;
+    background-size: cover;
+    padding: 13.5% 0 12%;
+
+    h1 {
+        margin: 0 auto 5%;
+
+        span {
+            white-space: normal;
+
+            @media screen and (min-width: @screen-lg) {
+                white-space: nowrap;
+            }
+        }
+    }
+
+    p {
+        font-size: 0.636em;
+    }
+
+    .play-btn-box {
+        margin: 0 0 40px;
+    }
+}
+
+// section2
+
+#section2 {
+    padding: 10.6% 0 8.4%;
+    background: url("../img/ractangle-section2.png") no-repeat;
+    background-color: #ececec;
+    background-position: right bottom;
+
+    @media screen and (min-width: @screen-lg) {
+        background: url("../img/ractangle-section2.png") no-repeat;
+        background-color: #fff;
+        background-position: right bottom;
+    }
+}
+
+// section3
+
+#section3 {
+    padding: 9% 0 11%;
+
+    background: @dirty-white;
+    @media screen and (min-width: @screen-md) {
+        background: url("../img/bg-section3.jpg") no-repeat;
+        background-position: center top;
+        background-size: cover;
+    }
+
+    h2 {
+        margin-bottom: 7%;
+    }
+
+    .img-box {
+        margin-bottom: 26px;
+    }
+}
+
+// description
+
+#description {
+    background: url("../img/ractangle-description.png") no-repeat;
+    background-position: left bottom;
+    padding: 6% 0 6.5%;
+
+    .img-box {
+        text-align: center;
+        position: relative;
+    }
+
+    img {
+        position: relative;
+        width: 80%;
+
+        @media screen and (min-width: @screen-md){
+            width: 114%;
+            left: -174px;
+        }
+    }
+
+    .text-box {
+        margin-top: 40px;
+    }
+}
+
+// clients
+
+#clients {
+    background-image: url("../img/bg-clients.jpg");
+    color: #fff;
+    padding: 7.5% 0 4.3%;
+
+    .marg-bot {
+        margin-bottom: 3.9%;
+    }
+
+    .img-box {
+        margin-bottom: 22px;
+    }
+
+    .client-img-box {
+        width: 20%;
+        float: left;
+    }
+
+    img {
+        filter: invert(40%);
+    }
+}
+
+
+// browser
+
+#browser {
+    padding: 6.8% 0 0;
+
+    h2 {
+        margin-bottom: 3%;
+    }
+
+    p {
+        max-width: 670px;
+        margin: 0 auto 8%;
+    }
+}
+
+// try-now
+
+#try-now {
+    padding: 6.3% 0px 3.9%;
+    background: @navy-blue;
+    color: #fff;
+
+    h2 {
+        margin-bottom: 5%;
+    }
+
+    .btn {
+        padding: 14px 84px;
+    }
+
+    form {
+        margin-bottom: 32px;
+    }
+
+    .form-group:not(:last-child) {
+        margin-top: 37px;
+        .form-control {
+            padding: 13px 43px;
+            height: auto;
+            background-color: rgba(255, 255, 255, 0.2);
+            color: #fff;
+            border-color: #fff;
+            border-radius: 3px;
+            opacity: 0.8;
+        }
+    }
+
+    .form-group:last-child {
+        position: relative;
+
+        img.arrow {
+            position: relative;
+            top: 24px;
+            left: -43px;
+            @media screen and (min-width: @screen-sm) {
+                top: 25px;
+                left: -44px;
+            }
+            @media screen and (min-width: @screen-md) {
+                top: 25px;
+                left: -51px;
+            }
+            @media screen and (min-width: @screen-lg) {
+                top: -17px;
+                left: -28px;
+            }
+        }
+
+        p {
+            position: relative;
+            display: inline-block;
+            top: 8px;
+            left: -38px;
+            @media screen and (min-width: @screen-sm) {
+                top: 7px;
+                left: -38px;
+                margin-bottom: 14px;
+                margin-top: 15px;
+            }
+            @media screen and (min-width: @screen-md) {
+                top: 6px;
+                left: -46px;
+                margin-bottom: 5px;
+                margin-top: 0;
+            }
+            @media screen and (min-width: @screen-lg) {
+                top: -30px;
+                left: -14px;
+            }
+        }
+    }
+
+    a {
+        color: #fff;
+    }
+}
+
+// footer
+
+footer {
+    background: url("../img/ractangle-footer.png") no-repeat;
+    background-position: right top;
+    padding: 6.3% 0 4.3%;
+
+
+    .newsletter {
+        border: 1px solid gray;
+        border-radius: 3px;
+        height: 50px;
+        position: relative;
+        margin-bottom: 14px;
+
+        input {
+            display: inline-block;
+            border: 0;
+            width: 80%;
+            height: 48px;
+            padding-left: 10px;
+            border-radius: 3px;
+        }
+        a {
+            display: inline-block;
+            background: #ff6d6d;
+            width: 20%;
+            height: 48px;
+            padding: 0;
+            border-radius: 3px;
+            position: absolute;
+            right: 0;
+
+            img {
+                margin: 0 auto;
+                display: block;
+                padding-top: 13px;
+            }
+        }
+    }
+
+    .social-box {
+        i{
+            padding: 0 12px;
+            opacity: 0.5;
+        }
+    }
+
+
+
+}
